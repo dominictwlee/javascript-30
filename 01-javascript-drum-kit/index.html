@@ -4,16 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>JS Drumkit</title>
 </head>
 <body>
-  <div class="container">
+    <h1 id="title">JS Drum Kit</h1>
+    <h4 id="instructions">Press the corresponding keys on your keyboard to play a sound</h4>
+  <div class="keys">
     <div class="key" data-key="65">
-      <h1 data->A</h1>
+        <h1>A</h1>
+        <p>Boom</p>
+    </div>
+    <div class="key" data-key="83">
+        <h1>S</h1>
+        <p>Clap</p>
+    </div>
+    <div class="key" data-key="68">
+        <h1>D</h1>
+        <p>Hihat</p>
+    </div>
+    <div class="key" data-key="70">
+        <h1>F</h1>
+        <p>Openhat</p>
+    </div>
+    <div class="key" data-key="71">
+        <h1>G</h1>
+        <p>Ride</p>
+    </div>
+    <div class="key" data-key="72">
+        <h1>H</h1>
+        <p>Snare</p>
+    </div>
+    <div class="key" data-key="74">
+        <h1>J</h1>
+        <p>Tink</p>
+    </div>
+    <div class="key" data-key="75">
+        <h1>K</h1>
+        <p>Tom</p>
+    </div>
+    <div class="key" data-key="76">
+        <h1>L</h1>
+        <p>Clap</p>
     </div>
   </div>
-  <audio class="sound" src="sounds/boom.wav" type="audio/wav" data-key="65"></audio>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
