@@ -1,3 +1,7 @@
+body {
+	overflow:hidden
+}
+
 #face {
 	stroke-width: 4px; stroke: #2a3d45;
   color: #ffeedb;
