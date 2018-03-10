@@ -1,0 +1,9 @@
+#face {
+	stroke-width: 4px; stroke: #2a3d45;
+  color: #ffeedb;
+  fill: currentColor;
+}
+#hour, #min, #sec {
+	stroke-width: 0.7px; fill: #829399; stroke: #2a3d45;
+}
+#sec { stroke: #ba2632; }
