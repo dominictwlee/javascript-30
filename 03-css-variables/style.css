@@ -1,0 +1,32 @@
+:root {
+  --spacing: 5px;
+  --blur: 10px;
+  --base-color: #0a100d;
+  background: #d6d5c9;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, .inputs {
+  text-align: center;
+}
+
+h1 {
+  color: #0a100d;
+  font-size: 60px;
+}
+
+.inputs {
+  font-size: 30px;
+}
+
+#highlight-text {
+  color: var(--base-color);
+}
+
+img {
+  margin: 50px auto;
+  padding: var(--spacing);
+  display: block;
+  background: var(--base-color);
+  filter: blur(var(--blur));
+}
