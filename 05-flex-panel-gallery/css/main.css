@@ -4,6 +4,7 @@ html {
   font-family: 'Ovo', serif;
   font-size: 60px;
   color: white;
+  overflow: hidden;
 }
 
 .row {
@@ -13,15 +14,27 @@ html {
   justify-content: space-around;
 }
 
-[class*='panel-'] {
+.panel {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   flex: 1;
   border: 1px dotted black;
   background-size: cover;
   background-position:center;
+  transition:
+    flex 0.7s cubic-bezier(0.57,-0.18,0.93,0.05),
+    font-size 0.7s cubic-bezier(0.57,0.18,0.93,0.05);
+}
+
+.panel > * {
+  flex: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .panel-1 {
@@ -93,3 +106,13 @@ html {
       rgba(0, 0, 0, 0.2)
     ), url(https://source.unsplash.com/1600x900/?sea);
 }
+
+.panel.open {
+  flex: 5;
+  font-size: 2rem;
+}
+
+/* .panel > *:first-child { transform: translateY(-700%); }
+.panel > *:last-child { transform: translateY(700%); }
+.panel.open *:first-child { transform: translateY(0); }
+.panel.open *:last-child { transform: translateY(0); } */
