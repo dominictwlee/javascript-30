@@ -30,7 +30,7 @@ html {
 }
 
 .panel > * {
-  flex: 0 auto;
+  flex: 1 auto;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -109,10 +109,10 @@ html {
 
 .panel.open {
   flex: 5;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
-/* .panel > *:first-child { transform: translateY(-700%); }
-.panel > *:last-child { transform: translateY(700%); }
-.panel.open *:first-child { transform: translateY(0); }
-.panel.open *:last-child { transform: translateY(0); } */
+.panel > *:first-child { transform: translateY(-100%); }
+.panel > *:last-child { transform: translateY(100%); }
+.panel.full-open *:first-child { transform: translateY(0); }
+.panel.full-open *:last-child { transform: translateY(0); }
