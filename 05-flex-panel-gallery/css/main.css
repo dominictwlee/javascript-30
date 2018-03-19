@@ -1,0 +1,95 @@
+html {
+  min-height: 100vh;
+  min-width: 300px;
+  font-family: 'Ovo', serif;
+  font-size: 60px;
+  color: white;
+}
+
+.row {
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+[class*='panel-'] {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  border: 1px dotted black;
+  background-size: cover;
+  background-position:center;
+}
+
+.panel-1 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(https://source.unsplash.com/1600x900/?forest);
+}
+
+.panel-2 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(https://source.unsplash.com/1600x900/?tundra,snow,ice,winter);
+}
+
+.panel-3 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(https://source.unsplash.com/1600x900/?mountain);
+}
+
+.panel-4 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(https://source.unsplash.com/1600x900/?city);
+}
+
+.panel-5 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(https://source.unsplash.com/1600x900/?sea);
+}
+
+.panel-1:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(https://source.unsplash.com/1600x900/?forest);
+}
+
+.panel-2:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(https://source.unsplash.com/1600x900/?tundra,snow,ice,winter);
+}
+
+.panel-3:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(https://source.unsplash.com/1600x900/?mountain);
+}
+
+.panel-4:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(https://source.unsplash.com/1600x900/?city);
+}
+
+.panel-5:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(https://source.unsplash.com/1600x900/?sea);
+}
