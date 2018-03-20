@@ -25,16 +25,16 @@ html {
   justify-content: center;
   text-align: center;
   flex: 1;
-  border: 1px dotted black;
   background-size: cover;
   background-position:center;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
   transition:
     flex 0.7s cubic-bezier(0.57,-0.18,0.93,0.05),
     font-size 0.7s cubic-bezier(0.57,-0.18,0.93,0.05);
 }
 
 .panel > * {
-  flex: 1 auto;
+  flex: 1 0 auto;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +116,18 @@ html {
   font-size: 2.3em;
 }
 
-.panel > *:first-child { transform: translateY(-100%); }
-.panel.open > *:first-child { transform: translateY(0); }
-.panel > *:last-child { transform: translateY(100%); }
-.panel.open > *:last-child { transform: translateY(0); }
+.panel>*:first-child {
+  transform: translateY(-100%);
+}
+
+.panel.open>*:first-child {
+  transform: translateY(0);
+}
+
+.panel>*:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open>*:last-child {
+  transform: translateY(0);
+}
