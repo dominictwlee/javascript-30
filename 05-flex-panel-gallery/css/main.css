@@ -2,9 +2,13 @@ html {
   min-height: 100vh;
   min-width: 300px;
   font-family: 'Ovo', serif;
-  font-size: 60px;
+  font-size: 30px;
   color: white;
   overflow: hidden;
+}
+
+.panel > :nth-child(2) {
+  font-size: 2em;
 }
 
 .row {
@@ -26,7 +30,7 @@ html {
   background-position:center;
   transition:
     flex 0.7s cubic-bezier(0.57,-0.18,0.93,0.05),
-    font-size 0.7s cubic-bezier(0.57,0.18,0.93,0.05);
+    font-size 0.7s cubic-bezier(0.57,-0.18,0.93,0.05);
 }
 
 .panel > * {
@@ -34,7 +38,7 @@ html {
   display:flex;
   justify-content: center;
   align-items: center;
-
+  transition: transform 1s cubic-bezier(1, 0.01,0.26,0.97);
 }
 
 .panel-1 {
@@ -109,10 +113,10 @@ html {
 
 .panel.open {
   flex: 5;
-  font-size: 2.3rem;
+  font-size: 2.3em;
 }
 
 .panel > *:first-child { transform: translateY(-100%); }
+.panel.open > *:first-child { transform: translateY(0); }
 .panel > *:last-child { transform: translateY(100%); }
-.panel.full-open *:first-child { transform: translateY(0); }
-.panel.full-open *:last-child { transform: translateY(0); }
+.panel.open > *:last-child { transform: translateY(0); }
