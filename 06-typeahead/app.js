@@ -4,7 +4,7 @@ const cityList = document.querySelector('.list');
 
 const citiesUrl = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 
-const citiesPromise =
+const citiesData =
   fetch(citiesUrl)
     .then((res) => {
       if (!res.ok) {
@@ -32,7 +32,7 @@ cityInput.addEventListener('input', function() {
   //  Reset list
   //  Filter Matches
   const regexp = new RegExp(cityInput.value, 'gi')
-  citiesPromise
+  citiesData
     .then(cities => {
       return cities.filter((result) => {
         return result.city.match(regexp) || result.state.match(regexp);
