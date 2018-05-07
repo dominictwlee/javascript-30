@@ -1,0 +1,15 @@
+body {
+  background-color: #fdfffc;
+  padding-top: 4rem;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.card {
+  margin: 1rem;
+  min-width: 14rem;
+  min-height: 21rem;
+  box-shadow: 1px 1px 3px 1px rgba(242,242,242,1);
+}
