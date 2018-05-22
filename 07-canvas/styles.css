@@ -1,0 +1,26 @@
+html {
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.container {
+  display: flex;
+}
+
+#canvas {
+  border: 2px solid black;
+}
+
+#btn {
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  color: white;
+  background-color: #e31a1a;
+  text-shadow: ;
+}
